@@ -15,7 +15,7 @@ class MarkdownEditor extends React.Component {
 
 
     handleChange(e) {
-        this.setState({ 
+        this.setState({
             value: e.target.value
         });
     }
@@ -37,19 +37,18 @@ class MarkdownEditor extends React.Component {
                 />
                 </div>
                 <div className="output">
-                    <h3>Markdown</h3>
-                <div 
+                    <h3>Markdown Preview</h3>
+                <div
                     dangerouslySetInnerHTML={this.getRawMarkup()}
                     className="output-text"
                 >
                 </div>
-                </div>                
+                </div>
             </div>
         )
     }
 }
 
-// ========================================
 
 ReactDOM.render(
     <MarkdownEditor />,
